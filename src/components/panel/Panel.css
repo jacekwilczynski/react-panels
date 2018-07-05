@@ -1,0 +1,37 @@
+.panel {
+  box-shadow: 0 0 1px black;
+  background: linear-gradient(-25deg, #dddddd, #f0f6fd);
+  font-family: Verdana, sans-serif;
+}
+
+.panel--moving {
+  margin: 5px;
+}
+
+.panel__title-bar {
+  background-color: darkslateblue;
+  padding: 5px 10px;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.panel__title-bar--moving {
+  cursor: grabbing;
+}
+
+.panel__title {
+  font-size: larger;
+  font-weight: bold;
+  color: white;
+}
+
+.panel__body {
+  color: black;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.positioned {
+  margin: 0;
+  position: absolute;
+}
