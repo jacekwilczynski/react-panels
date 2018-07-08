@@ -6,10 +6,6 @@ import DraggingBackground from 'utils/containers/DraggingBackground';
 import ReactToDomEventMapper from 'utils/containers/ReactToDomEventMapper';
 import './app/App.css';
 
-const mapStateToProps = state => ({
-  panelIds: selectors.getPanelIds(state)
-});
-
 const AppWrapped = propsFromConnect => (
   <DraggingBackground
     render={eventMap => (
@@ -21,6 +17,10 @@ const AppWrapped = propsFromConnect => (
     )}
   />
 );
+
+const mapStateToProps = state => ({
+  panelIds: selectors.getPanelIds(state)
+});
 
 const AppConnected = connect(mapStateToProps)(AppWrapped);
 
